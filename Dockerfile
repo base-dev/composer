@@ -1,4 +1,4 @@
-FROM localhost:5000/tghs-phpcli
+FROM tghs/phpcli
 
 WORKDIR /tmp
 
