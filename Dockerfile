@@ -13,7 +13,7 @@ RUN apt-get update -y && \
 RUN mkdir -p /data/www # wat
 
 VOLUME ["/data"]
-WORKDIR /data/www
+WORKDIR /data
 
 ENTRYPOINT ["composer"]
 CMD ["--help"]
