@@ -15,5 +15,7 @@ RUN mkdir -p /data/www # wat
 VOLUME ["/data"]
 WORKDIR /data
 
-ENTRYPOINT ["composer"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["--help"]
